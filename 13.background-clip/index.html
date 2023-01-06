@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #example1 {
+            border: 10px solid black;
+            padding: 15px;
+            background-color: lightgreen;
+            background-clip: border-box;
+        }
+
+        #example2 {
+            border: 10px solid black;
+            padding: 15px;
+            background-color: lightgreen;
+            background-clip: padding-box;
+        }
+
+        #example3 {
+            border: 10px solid black;
+            padding: 15px;
+            background-color: lightgreen;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <p>background-clip: border-box (this is default):</p>
+    <div id="example1">
+        <p>background가 border 뒤까지 확장되어 있음.</p>
+    </div>
+    <p>background-clip: padding-box:</p>
+    <div id="example2">
+        <p>background가 padding까지만, border 전까지만 확장되어 있음.</p>
+    </div>
+    <p>background-clip: content box:</p>
+    <div id="example3">
+        <p>background가 content box까지만 확장되어 있음.</p>
+    </div>
+</body>
+</html>
