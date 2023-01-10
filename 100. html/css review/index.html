@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>html/css study review! </b></h1>
+    <h3>우선 html에 대하여. </h3>
+    <h4> html은 요소들로 구성됨. 요소는 크게 태그와 컨텐츠로 구성됨.<br>
+        태그는 시작태그와 종료태그로 이루어짐. 요소는 크게 세 가지가 있음. <br>
+        <dl>
+            <dt>빈 요소</dt>
+            <dd>: 내용 없이 구조적인 기능. ex) br, hr 등.</dd>
+            <br>
+            <dt>블록 요소</dt>
+            <dd>: h1~h6, div, list, p 등. <br>
+            블록요소는 다른 요소를 포함할 수 있음.<br>
+            블록요소 다음에 다른 요소를 사용하면 아랫줄에 나타남.<br>
+            margin, padding 등의 값을 가질 수 있음.</dd>
+            <br>
+            <dt>인라인 요소</dt>
+            <dd>: a, span, strong 등.<br>
+            다른 블록요소에 포함되어 있으며,<br>
+            다른 인라인 요소는 포함할 수 있지만 블록요소는 포함할 수 없음<br>
+            인라인 요소 다음에 인라인 요소 사용하면 바로 옆에 나타남.<br>
+            width와 height 값을 가질 수 있음.<br></dd>
+        </dl>
+
+    <h4> 속성이라는 것도 있음. attribute. 태그 안에 존재.<br>
+        <a href = "https://www.youtube.com/">이건 a태그와 href속성을 사용해서 만든거임. go to youtube.</a>
+    </h4>
+    <h4> 시맨틱요소라는 것도 있음. 요소들을 알아보기 쉽도록 하는 것.</h4>
+    <h4>html 기본 태그와 역할.
+        <ol type ="ㄱ">
+            <li> heading 태그. h1 ~ h6. h1 -> h6 으로 갈 수록 글자가 작아짐.</li>
+            <li> Paragraphs 태그. p. 문단 정의할 때.</li>  
+            <li> Preformatted Text 태그. pre. 콘텐츠에 사용된 여백, 줄바꿈 등이 그대로 브라우저에 표현됨.
+                <pre> 메롱 메롱 
+                     메롱          메롱          메롱 
+                           메롱            메롱           이것처럼 ㅋㅋ.
+                </pre>
+            </li> 
+            <li>List 태그. 순서가 있는 ol. 순서가 없는 dl. 설명식의 dl. 이 있음.</li>
+            <li>줄바꿈. br</li> 
+            <li>수평선. hr</li>
+            <hr style ="border: 1px solid orange">
+            <li>텍스트 서식 
+                <ol>
+                    <li> <b>strong/b 글씨 굵게.</b></li>
+                    <li> <i>em/i 글씨 기울게.</i> </li>
+                    <li> <small>small 글씨 작게.</small></li>
+                    <li> <mark>mark 형광펜.</mark></li>
+                    <li> <sub>sub아랫첨자.</sub><sup>sup윗첨자.</sup></li>
+                </ol>
+            </li>
+            <li>
+                <ol>
+                    <li><blockquote> blockquote 들여쓰기.</blockquote></li>
+                    <li> <q> q 따옴표. </q></li>
+                </ol>
+            </li>
+        </ol>
+    </h4>
+    </h4> 
+<br>
+<br>
+
+
+    <h3>다음 css에 대하여.</h3> 
+    <h4>css는 html로 만든 문장 구조를 브라우저에 어떻게 보여지게 할 지 지정하는 것임.</h4>
+    <h4><b>css를 사용하는 방법 3가지.</b>
+        <ul type ="square">
+            <li>html 안에서 style속성을 사용.(인라인 스타일)</li>
+            <li>style 태그를 사용. html 내부에서 이용하는 방법.(내부 스타일)</li>
+            <li>별도로 css파일을 분리. html 문서에 연결하여 사용.(외부 스타일)</li>
+        </ul>
+    </h4>
+    <h4><b>스타일 적용 우선순위</b><br>
+    인라인 스타일 -> 내부/외부 스타일 시트 -> 웹 브라우저 기본 스타일.</h4>
+    <br>
+    
+    <h4>css 기본구조.<br>
+        선택자와 프로퍼티, 프로퍼티 값 으로 이루어짐.
+    </h4>
+
+
+    <h4> #css 속성들.<br>
+        <ul type="square">
+            <li>background-color -> 백그라운드 색 지정.</li>
+            <li>color -> 텍스트 색 지정</li>
+            <li>height, width -> 높이, 너비 지정.</li>
+            <li>border: none -> border 제거.</li>
+            <li>border-radius -> 둥근 모서리 만들기</li>
+            <li>cursor: pointer -> 요소 위로 마우스 가져갈 때 마우스 커서 변경</li>
+            <li>border-color, style, width 테두리 색상, 스타일, 너비 설정.</li>
+        </ul>
+    </h4>
+
+
+    <h4> #class 속성.<br>
+    css로 해당 클래스를 가진 애들만 스타일링 가능. <br>
+    여러 요소가 동일한 클래스를 가질 수 있고, 한 요소가 공백으로 구분된 여러 클래스를 가질 수 있음.<br>
+    css에서, .~~ 의 신택스로 해당 클래스를 가진 애들 스타일링할 수 있음.</h4>
+
+    
+</body>
+</html>
